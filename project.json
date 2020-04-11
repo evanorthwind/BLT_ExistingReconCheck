@@ -1,0 +1,55 @@
+{
+  "name": "BLT_Process",
+  "description": "Blank Process",
+  "main": "Main.xaml",
+  "dependencies": {
+    "AdvanceExcel": "1.0.9",
+    "BalaReva.Excel.Activities": "2019.2.0",
+    "UiPath.Excel.Activities": "[2.6.2]",
+    "UiPath.FTP.Activities": "1.0.7346.28183",
+    "UiPath.Mail.Activities": "[1.5.0]",
+    "UiPath.System.Activities": "[19.6.0]",
+    "UiPath.UIAutomation.Activities": "[19.6.0]",
+    "UiPathTeam.HealthCheckUp.Activities": "1.0.6835.20375"
+  },
+  "schemaVersion": "3.2",
+  "studioVersion": "19.4.3.0",
+  "projectVersion": "1.0.13",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ]
+  },
+  "projectType": "Workflow",
+  "libraryOptions": {
+    "includeOriginalXaml": false,
+    "privateWorkflows": []
+  },
+  "arguments": {
+    "input": [
+      {
+        "name": "Nav_error",
+        "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "required": false,
+        "hasDefault": false
+      },
+      {
+        "name": "Nav_retry_Count",
+        "type": "System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "required": false,
+        "hasDefault": false
+      },
+      {
+        "name": "Nav_retry_time_delay",
+        "type": "System.Double, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
+        "required": false,
+        "hasDefault": false
+      }
+    ],
+    "output": []
+  },
+  "webServices": []
+}
