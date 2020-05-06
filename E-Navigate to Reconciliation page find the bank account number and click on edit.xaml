@@ -6,11 +6,12 @@
     <x:Property Name="Out_Statementno" Type="OutArgument(x:String)" />
     <x:Property Name="Out_Process_name" Type="InArgument(x:String)" />
     <x:Property Name="New_recon_Status" Type="InOutArgument(x:Boolean)" />
+    <x:Property Name="In_StatementDate" Type="InArgument(x:String)" />
   </x:Members>
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>262,437</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1096,2775</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -60,15 +61,16 @@
       <AssemblyReference>UiPath.Excel</AssemblyReference>
       <AssemblyReference>UiPath.Mail</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Navigate to Reconciliation page find the bank account number" sap:VirtualizedContainerService.HintSize="222,357" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Navigate to Reconciliation page find the bank account number" sap:VirtualizedContainerService.HintSize="1056,2695" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Navigate to bank reconciliation process started&quot;]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1034,51" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Navigate to bank reconciliation process started&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -76,15 +78,15 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <TryCatch DisplayName="Navigate to Reconciliation page find the bank account number" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1034,2389" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Flowchart sap2010:Annotation.AnnotationText="Navigation steps in NAV when the bot need to select the edit" DisplayName="Flow-Navigate to Reconciliation page find the bank account number" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+        <Flowchart sap2010:Annotation.AnnotationText="Navigation steps in NAV when the bot need to select the edit" DisplayName="Flow-Navigate to Reconciliation page find the bank account number" sap:VirtualizedContainerService.HintSize="1016,2162" sap2010:WorkflowViewState.IdRef="Flowchart_1">
           <Flowchart.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="BI_Add_Filter" />
             <Variable x:TypeArguments="x:Boolean" Name="BI_Bank_Account_No" />
@@ -95,7 +97,7 @@
           </Flowchart.Variables>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               <av:Point x:Key="ShapeLocation">480,2.5</av:Point>
               <av:Size x:Key="ShapeSize">60,75</av:Size>
               <av:PointCollection x:Key="ConnectorLocation">510,77.5 510,114.02</av:PointCollection>
@@ -383,11 +385,11 @@
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <av:Point x:Key="ShapeLocation">210,1184.5</av:Point>
-                                                                <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                                <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                                 <av:PointCollection x:Key="ConnectorLocation">310,1235.5 310,1256.5</av:PointCollection>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
-                                                            <ui:UiElementExists DisplayName="Element Exists _Bank Account no" Exists="[BI_Bank_Account_No]" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                                                            <ui:UiElementExists DisplayName="Element Exists _Bank Account no" Exists="[BI_Bank_Account_No]" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
                                                               <ui:UiElementExists.Target>
                                                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="b02ee3086886d6af40af87a91a3ae833" Selector="&lt;wnd app='microsoft.dynamics.nav.client.exe' cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd ctrlname='LayoutPlaceholder' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations' /&gt;&lt;wnd ctrlname='contentAndMessagesPlaceholder' /&gt;&lt;wnd ctrlname='contentAndFilterPlaceholder' /&gt;&lt;wnd ctrlname='contentPlaceholder' /&gt;&lt;wnd cls='WindowsForms10.Window.*' idx='1' /&gt;&lt;wnd ctrlname='_DataGrid' /&gt;&lt;ctrl name='DataGridView' role='table' /&gt;&lt;ctrl name='Row 0' role='row' /&gt;&lt;ctrl name='Bank Account No. Row 0' role='cell' /&gt;" TimeoutMS="3000" WaitForReady="INTERACTIVE" />
                                                               </ui:UiElementExists.Target>
@@ -413,11 +415,11 @@
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <av:Point x:Key="ShapeLocation">80,1374.5</av:Point>
-                                                                        <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                                        <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                                         <av:PointCollection x:Key="ConnectorLocation">180,1425.5 180,1449.5</av:PointCollection>
                                                                       </scg:Dictionary>
                                                                     </sap:WorkflowViewStateService.ViewState>
-                                                                    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get 1st visible account number" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="GetValue_2">
+                                                                    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get 1st visible account number" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="GetValue_2">
                                                                       <ui:GetValue.Target>
                                                                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="e8deab00a0cc11c67c7e7b112a0802e5" Selector="&lt;wnd app='microsoft.dynamics.nav.client.exe' cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd ctrlname='LayoutPlaceholder' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations' /&gt;&lt;wnd ctrlname='contentAndMessagesPlaceholder' /&gt;&lt;wnd ctrlname='contentAndFilterPlaceholder' /&gt;&lt;wnd ctrlname='contentPlaceholder' /&gt;&lt;wnd cls='WindowsForms10.Window.*' idx='1' /&gt;&lt;wnd ctrlname='_DataGrid' /&gt;&lt;ctrl name='DataGridView' role='table' /&gt;&lt;ctrl name='Row 0' role='row' /&gt;&lt;ctrl name='Bank Account No. Row 0' role='cell' /&gt;" WaitForReady="INTERACTIVE" />
                                                                       </ui:GetValue.Target>
@@ -435,11 +437,11 @@
                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                             <av:Point x:Key="ShapeLocation">75,1449.5</av:Point>
-                                                                            <av:Size x:Key="ShapeSize">210,62</av:Size>
+                                                                            <av:Size x:Key="ShapeSize">210,61</av:Size>
                                                                             <av:PointCollection x:Key="ConnectorLocation">180,1510.5 180,1544.5</av:PointCollection>
                                                                           </scg:Dictionary>
                                                                         </sap:WorkflowViewStateService.ViewState>
-                                                                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="210,62" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot; Visible_AccNo - &quot;+Visible_AccNo+&quot;;&quot;+&quot;In_BankNo - &quot;+In_BankNo]">
+                                                                        <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="210,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot; Visible_AccNo - &quot;+Visible_AccNo+&quot;;&quot;+&quot;In_BankNo - &quot;+In_BankNo]">
                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -451,69 +453,157 @@
                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                 <av:Point x:Key="ShapeLocation">80,1544.5</av:Point>
-                                                                                <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                                                <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                                                 <av:PointCollection x:Key="ConnectorLocation">280,1570 350,1570 350,1616.5</av:PointCollection>
                                                                               </scg:Dictionary>
                                                                             </sap:WorkflowViewStateService.ViewState>
-                                                                            <If Condition="[In_BankNo = Visible_AccNo]" DisplayName="If to check the account no" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="If_1">
+                                                                            <If Condition="[In_BankNo = Visible_AccNo]" DisplayName="If to check the account no" sap:VirtualizedContainerService.HintSize="872,986" sap2010:WorkflowViewState.IdRef="If_1">
                                                                               <sap:WorkflowViewStateService.ViewState>
                                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                 </scg:Dictionary>
                                                                               </sap:WorkflowViewStateService.ViewState>
                                                                               <If.Then>
-                                                                                <Sequence DisplayName="Click on Edit" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                                                                <Sequence DisplayName="Click on Edit" sap:VirtualizedContainerService.HintSize="647,838" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                                                                                  <Sequence.Variables>
+                                                                                    <Variable x:TypeArguments="x:String" Name="ReconDate" />
+                                                                                  </Sequence.Variables>
                                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                                     </scg:Dictionary>
                                                                                   </sap:WorkflowViewStateService.ViewState>
-                                                                                  <Assign sap:VirtualizedContainerService.HintSize="314,60" sap2010:WorkflowViewState.IdRef="Assign_31">
-                                                                                    <Assign.To>
-                                                                                      <OutArgument x:TypeArguments="x:Boolean">[New_recon_Status]</OutArgument>
-                                                                                    </Assign.To>
-                                                                                    <Assign.Value>
-                                                                                      <InArgument x:TypeArguments="x:Boolean">False</InArgument>
-                                                                                    </Assign.Value>
-                                                                                  </Assign>
-                                                                                  <Assign DisplayName="Assign - reinitialize retry count as 1" sap:VirtualizedContainerService.HintSize="314,60" sap2010:WorkflowViewState.IdRef="Assign_24">
-                                                                                    <Assign.To>
-                                                                                      <OutArgument x:TypeArguments="x:Int32">[Retry_Count_increment]</OutArgument>
-                                                                                    </Assign.To>
-                                                                                    <Assign.Value>
-                                                                                      <InArgument x:TypeArguments="x:Int32">1</InArgument>
-                                                                                    </Assign.Value>
-                                                                                  </Assign>
-                                                                                  <Assign DisplayName="Assign error status as false" sap:VirtualizedContainerService.HintSize="314,60" sap2010:WorkflowViewState.IdRef="Assign_15">
-                                                                                    <Assign.To>
-                                                                                      <OutArgument x:TypeArguments="x:Boolean">[Out_Error_Status]</OutArgument>
-                                                                                    </Assign.To>
-                                                                                    <Assign.Value>
-                                                                                      <InArgument x:TypeArguments="x:Boolean">False</InArgument>
-                                                                                    </Assign.Value>
-                                                                                  </Assign>
-                                                                                  <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click on edit" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
-                                                                                    <ui:Click.CursorPosition>
-                                                                                      <ui:CursorPosition Position="Center">
-                                                                                        <ui:CursorPosition.OffsetX>
-                                                                                          <InArgument x:TypeArguments="x:Int32" />
-                                                                                        </ui:CursorPosition.OffsetX>
-                                                                                        <ui:CursorPosition.OffsetY>
-                                                                                          <InArgument x:TypeArguments="x:Int32" />
-                                                                                        </ui:CursorPosition.OffsetY>
-                                                                                      </ui:CursorPosition>
-                                                                                    </ui:Click.CursorPosition>
-                                                                                    <ui:Click.Target>
-                                                                                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="ae6f7b5d98498855bd24f7a5384d6d96" Selector="&lt;wnd app='microsoft.dynamics.nav.client.exe' cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd ctrlname='MenuContentPane' /&gt;&lt;wnd cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='HwndWrapper*' /&gt;&lt;ctrl automationid='{17F878F7-1EB4-4B40-A6D5-55E87F26029B}' /&gt;&lt;ctrl automationid='{37F878F7-1EB4-4B40-A6D5-55E87F26029B}' /&gt;&lt;ctrl idx='1' name='System.Windows.Controls.Ribbon.RibbonButton' role='list item' /&gt;&lt;ctrl automationid='{f5e90673-24b7-4b19-ae80-3ab8df73dd7a}' /&gt;" WaitForReady="INTERACTIVE" />
-                                                                                    </ui:Click.Target>
+                                                                                  <TryCatch DisplayName="Get Recon Date" sap:VirtualizedContainerService.HintSize="625,51" sap2010:WorkflowViewState.IdRef="TryCatch_2">
                                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                                                                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                                       </scg:Dictionary>
                                                                                     </sap:WorkflowViewStateService.ViewState>
-                                                                                  </ui:Click>
+                                                                                    <TryCatch.Try>
+                                                                                      <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get recon date" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="GetValue_5">
+                                                                                        <ui:GetValue.Target>
+                                                                                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="2e11ac4601b5ea9984c91545343fdc47" Selector="&lt;wnd app='microsoft.dynamics.nav.client.exe' cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd ctrlname='LayoutPlaceholder' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations' /&gt;&lt;wnd ctrlname='contentAndMessagesPlaceholder' /&gt;&lt;wnd ctrlname='contentAndFilterPlaceholder' /&gt;&lt;wnd ctrlname='contentPlaceholder' /&gt;&lt;wnd cls='WindowsForms10.Window.*' idx='1' /&gt;&lt;wnd ctrlname='_DataGrid' /&gt;&lt;ctrl name='DataGridView' role='table' /&gt;&lt;ctrl name='Row 0' role='row' /&gt;&lt;ctrl name='Statement Date Row 0' role='cell' /&gt;" WaitForReady="INTERACTIVE" />
+                                                                                        </ui:GetValue.Target>
+                                                                                        <ui:GetValue.Value>
+                                                                                          <OutArgument x:TypeArguments="x:String">[ReconDate]</OutArgument>
+                                                                                        </ui:GetValue.Value>
+                                                                                      </ui:GetValue>
+                                                                                    </TryCatch.Try>
+                                                                                    <TryCatch.Catches>
+                                                                                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                                                                                        <sap:WorkflowViewStateService.ViewState>
+                                                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                                          </scg:Dictionary>
+                                                                                        </sap:WorkflowViewStateService.ViewState>
+                                                                                        <ActivityAction x:TypeArguments="s:Exception">
+                                                                                          <ActivityAction.Argument>
+                                                                                            <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                                                                                          </ActivityAction.Argument>
+                                                                                          <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get recon date" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="GetValue_6">
+                                                                                            <ui:GetValue.Target>
+                                                                                              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="2e11ac4601b5ea9984c91545343fdc47" Selector="&lt;wnd app='microsoft.dynamics.nav.client.exe' cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd ctrlname='LayoutPlaceholder' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations' /&gt;&lt;wnd ctrlname='contentAndMessagesPlaceholder' /&gt;&lt;wnd ctrlname='contentAndFilterPlaceholder' /&gt;&lt;wnd ctrlname='contentPlaceholder' /&gt;&lt;wnd cls='WindowsForms10.Window.*' idx='1' /&gt;&lt;wnd ctrlname='_DataGrid' /&gt;&lt;ctrl name='DataGridView' role='table' /&gt;&lt;ctrl name='Row 0' role='row' /&gt;&lt;ctrl name='Statement Date Row 0' role='cell' /&gt;" WaitForReady="INTERACTIVE" />
+                                                                                            </ui:GetValue.Target>
+                                                                                            <ui:GetValue.Value>
+                                                                                              <OutArgument x:TypeArguments="x:String">[ReconDate]</OutArgument>
+                                                                                            </ui:GetValue.Value>
+                                                                                          </ui:GetValue>
+                                                                                        </ActivityAction>
+                                                                                      </Catch>
+                                                                                    </TryCatch.Catches>
+                                                                                  </TryCatch>
+                                                                                  <If Condition="[Datetime.Parse(ReconDate).ToString(&quot;dd&quot;) &gt; Datetime.Parse(In_StatementDate).ToString(&quot;dd&quot;)]" DisplayName="If - Check Statement date &amp; Recon date" sap:VirtualizedContainerService.HintSize="625,623" sap2010:WorkflowViewState.IdRef="If_6">
+                                                                                    <If.Then>
+                                                                                      <Sequence DisplayName="Wait till recon cleared" sap:VirtualizedContainerService.HintSize="336,330" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                                                                                        <sap:WorkflowViewStateService.ViewState>
+                                                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                                          </scg:Dictionary>
+                                                                                        </sap:WorkflowViewStateService.ViewState>
+                                                                                        <Assign sap:VirtualizedContainerService.HintSize="314,60" sap2010:WorkflowViewState.IdRef="Assign_41">
+                                                                                          <Assign.To>
+                                                                                            <OutArgument x:TypeArguments="x:Boolean">[New_recon_Status]</OutArgument>
+                                                                                          </Assign.To>
+                                                                                          <Assign.Value>
+                                                                                            <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                                                                          </Assign.Value>
+                                                                                          <sap:WorkflowViewStateService.ViewState>
+                                                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                            </scg:Dictionary>
+                                                                                          </sap:WorkflowViewStateService.ViewState>
+                                                                                        </Assign>
+                                                                                        <ui:CloseApplication ContinueOnError="True" DisplayName="Close NAV Application If existes" sap:VirtualizedContainerService.HintSize="314,106" sap2010:WorkflowViewState.IdRef="CloseApplication_4">
+                                                                                          <ui:CloseApplication.Target>
+                                                                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="9e4ff5cdf69344eaa8757b83a91d29e4" Selector="&lt;wnd app='microsoft.dynamics.nav.client.exe' cls='WindowsForms10.Window.*' title='*' /&gt;" WaitForReady="INTERACTIVE" />
+                                                                                          </ui:CloseApplication.Target>
+                                                                                          <sap:WorkflowViewStateService.ViewState>
+                                                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                            </scg:Dictionary>
+                                                                                          </sap:WorkflowViewStateService.ViewState>
+                                                                                        </ui:CloseApplication>
+                                                                                      </Sequence>
+                                                                                    </If.Then>
+                                                                                    <If.Else>
+                                                                                      <Sequence DisplayName="Click on EDIT &amp; import the file" sap:VirtualizedContainerService.HintSize="264,475" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                                                                                        <sap:WorkflowViewStateService.ViewState>
+                                                                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                          </scg:Dictionary>
+                                                                                        </sap:WorkflowViewStateService.ViewState>
+                                                                                        <Assign sap:VirtualizedContainerService.HintSize="242,60" sap2010:WorkflowViewState.IdRef="Assign_31">
+                                                                                          <Assign.To>
+                                                                                            <OutArgument x:TypeArguments="x:Boolean">[New_recon_Status]</OutArgument>
+                                                                                          </Assign.To>
+                                                                                          <Assign.Value>
+                                                                                            <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                                                                          </Assign.Value>
+                                                                                        </Assign>
+                                                                                        <Assign DisplayName="Assign - reinitialize retry count as 1" sap:VirtualizedContainerService.HintSize="242,60" sap2010:WorkflowViewState.IdRef="Assign_24">
+                                                                                          <Assign.To>
+                                                                                            <OutArgument x:TypeArguments="x:Int32">[Retry_Count_increment]</OutArgument>
+                                                                                          </Assign.To>
+                                                                                          <Assign.Value>
+                                                                                            <InArgument x:TypeArguments="x:Int32">1</InArgument>
+                                                                                          </Assign.Value>
+                                                                                        </Assign>
+                                                                                        <Assign DisplayName="Assign error status as false" sap:VirtualizedContainerService.HintSize="242,60" sap2010:WorkflowViewState.IdRef="Assign_15">
+                                                                                          <Assign.To>
+                                                                                            <OutArgument x:TypeArguments="x:Boolean">[Out_Error_Status]</OutArgument>
+                                                                                          </Assign.To>
+                                                                                          <Assign.Value>
+                                                                                            <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                                                                          </Assign.Value>
+                                                                                        </Assign>
+                                                                                        <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click on edit" sap:VirtualizedContainerService.HintSize="242,51" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                                                                                          <ui:Click.CursorPosition>
+                                                                                            <ui:CursorPosition Position="Center">
+                                                                                              <ui:CursorPosition.OffsetX>
+                                                                                                <InArgument x:TypeArguments="x:Int32" />
+                                                                                              </ui:CursorPosition.OffsetX>
+                                                                                              <ui:CursorPosition.OffsetY>
+                                                                                                <InArgument x:TypeArguments="x:Int32" />
+                                                                                              </ui:CursorPosition.OffsetY>
+                                                                                            </ui:CursorPosition>
+                                                                                          </ui:Click.CursorPosition>
+                                                                                          <ui:Click.Target>
+                                                                                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="ae6f7b5d98498855bd24f7a5384d6d96" Selector="&lt;wnd app='microsoft.dynamics.nav.client.exe' cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd ctrlname='MenuContentPane' /&gt;&lt;wnd cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='HwndWrapper*' /&gt;&lt;ctrl automationid='{17F878F7-1EB4-4B40-A6D5-55E87F26029B}' /&gt;&lt;ctrl automationid='{37F878F7-1EB4-4B40-A6D5-55E87F26029B}' /&gt;&lt;ctrl idx='1' name='System.Windows.Controls.Ribbon.RibbonButton' role='list item' /&gt;&lt;ctrl automationid='{f5e90673-24b7-4b19-ae80-3ab8df73dd7a}' /&gt;" WaitForReady="INTERACTIVE" />
+                                                                                          </ui:Click.Target>
+                                                                                          <sap:WorkflowViewStateService.ViewState>
+                                                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                                                                            </scg:Dictionary>
+                                                                                          </sap:WorkflowViewStateService.ViewState>
+                                                                                        </ui:Click>
+                                                                                      </Sequence>
+                                                                                    </If.Else>
+                                                                                  </If>
                                                                                 </Sequence>
                                                                               </If.Then>
                                                                               <If.Else>
@@ -676,10 +766,10 @@
                                                                     <sap:WorkflowViewStateService.ViewState>
                                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                         <av:Point x:Key="ShapeLocation">400,1374.5</av:Point>
-                                                                        <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                                        <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                                       </scg:Dictionary>
                                                                     </sap:WorkflowViewStateService.ViewState>
-                                                                    <If sap2010:Annotation.AnnotationText="While executing the automatch bot should click on EDIT if there is existing recon." Condition="[Out_Process_name = &quot;Automatch mail process&quot;]" DisplayName="If to check the process name" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="If_4">
+                                                                    <If sap2010:Annotation.AnnotationText="While executing the automatch bot should click on EDIT if there is existing recon." Condition="[Out_Process_name = &quot;Automatch mail process&quot;]" DisplayName="If to check the process name" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_4">
                                                                       <sap:WorkflowViewStateService.ViewState>
                                                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -947,7 +1037,7 @@
         </Flowchart>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="1020,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -958,7 +1048,7 @@
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Error" sap:VirtualizedContainerService.HintSize="264,385" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence DisplayName="Error" sap:VirtualizedContainerService.HintSize="264,382" sap2010:WorkflowViewState.IdRef="Sequence_4">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -986,7 +1076,7 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Navigate to bank reconciliation process Ended&quot;]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1034,51" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Navigate to bank reconciliation process Ended&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
