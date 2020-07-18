@@ -60,7 +60,6 @@
       <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
       <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
       <AssemblyReference>System.Data.Entity</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Flowchart DisplayName="BLT existing recon check" sap:VirtualizedContainerService.HintSize="614,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
@@ -1193,7 +1192,7 @@
                                                                   <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
                                                                 </scg:Dictionary>
                                                               </sap:WorkflowViewStateService.ViewState>
-                                                              <If Condition="[Error_Status= False or Nav_error = False]" sap:VirtualizedContainerService.HintSize="484,235" sap2010:WorkflowViewState.IdRef="If_128">
+                                                              <If Condition="[Error_Status= False or Nav_error = False]" sap:VirtualizedContainerService.HintSize="464,235" sap2010:WorkflowViewState.IdRef="If_128">
                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1201,13 +1200,12 @@
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
                                                                 <If.Then>
-                                                                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke N-Navigate to Reconciliation page find the bank account number and click on New workflow" sap:VirtualizedContainerService.HintSize="359,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_82" UnSafe="False" WorkflowFileName="N-Navigate to Reconciliation page find the bank account number and click on New.xaml">
+                                                                  <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke N-Navigate to Reconciliation page find the bank account number and click on New workflow" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_82" UnSafe="False" WorkflowFileName="NEW_StatementFile_Import.xaml">
                                                                     <ui:InvokeWorkflowFile.Arguments>
-                                                                      <InArgument x:TypeArguments="x:String" x:Key="In_BankNo">[Bank_No]</InArgument>
                                                                       <OutArgument x:TypeArguments="x:String" x:Key="Out_Error_Msg">[Error_Msg]</OutArgument>
                                                                       <OutArgument x:TypeArguments="x:Boolean" x:Key="Out_Error_Status">[Nav_error]</OutArgument>
-                                                                      <OutArgument x:TypeArguments="x:String" x:Key="Out_Statementno" />
-                                                                      <OutArgument x:TypeArguments="x:Boolean" x:Key="Existing_recon">[In_ExistingReconStatus]</OutArgument>
+                                                                      <OutArgument x:TypeArguments="x:Boolean" x:Key="Out_NewReconStatus">[In_ExistingReconStatus]</OutArgument>
+                                                                      <InArgument x:TypeArguments="x:String" x:Key="In_AccountNo">[Bank_No]</InArgument>
                                                                       <InArgument x:TypeArguments="x:String" x:Key="In_Date">[Str_Date.ToString]</InArgument>
                                                                     </ui:InvokeWorkflowFile.Arguments>
                                                                     <sap:WorkflowViewStateService.ViewState>
@@ -1293,7 +1291,7 @@
                                                                           <x:Boolean x:Key="IsAnnotationDocked">False</x:Boolean>
                                                                         </scg:Dictionary>
                                                                       </sap:WorkflowViewStateService.ViewState>
-                                                                      <If Condition="[Error_Status= False or Nav_error = False]" sap:VirtualizedContainerService.HintSize="484,235" sap2010:WorkflowViewState.IdRef="If_125">
+                                                                      <If Condition="[Error_Status= False or Nav_error = False]" sap:VirtualizedContainerService.HintSize="464,235" sap2010:WorkflowViewState.IdRef="If_125">
                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1301,15 +1299,13 @@
                                                                           </scg:Dictionary>
                                                                         </sap:WorkflowViewStateService.ViewState>
                                                                         <If.Then>
-                                                                          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke E-Navigate to Reconciliation page find the bank account number and click on edit workflow" sap:VirtualizedContainerService.HintSize="359,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_79" UnSafe="False" WorkflowFileName="E-Navigate to Reconciliation page find the bank account number and click on edit.xaml">
+                                                                          <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke E-Navigate to Reconciliation page find the bank account number and click on edit workflow" sap:VirtualizedContainerService.HintSize="314,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_79" UnSafe="False" WorkflowFileName="EDIT_StatementFile_Import.xaml">
                                                                             <ui:InvokeWorkflowFile.Arguments>
-                                                                              <InArgument x:TypeArguments="x:String" x:Key="In_BankNo">[Bank_No]</InArgument>
                                                                               <OutArgument x:TypeArguments="x:String" x:Key="Out_Error_Msg">[Error_Msg]</OutArgument>
                                                                               <OutArgument x:TypeArguments="x:Boolean" x:Key="Out_Error_Status">[Nav_error]</OutArgument>
-                                                                              <OutArgument x:TypeArguments="x:String" x:Key="Out_Statementno" />
-                                                                              <InArgument x:TypeArguments="x:String" x:Key="Out_Process_name" />
-                                                                              <InOutArgument x:TypeArguments="x:Boolean" x:Key="New_recon_Status">[In_ExistingReconStatus]</InOutArgument>
                                                                               <InArgument x:TypeArguments="x:String" x:Key="In_StatementDate">[Str_Date.ToString]</InArgument>
+                                                                              <InArgument x:TypeArguments="x:String" x:Key="In_AccountNo">[Bank_No]</InArgument>
+                                                                              <OutArgument x:TypeArguments="x:Boolean" x:Key="Out_NewReconStatus">[In_ExistingReconStatus]</OutArgument>
                                                                             </ui:InvokeWorkflowFile.Arguments>
                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
