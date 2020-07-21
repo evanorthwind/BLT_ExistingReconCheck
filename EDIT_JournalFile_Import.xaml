@@ -9,7 +9,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>2270,2478</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>2270,2470</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -63,13 +63,13 @@
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Navigate to Reconciliation page find the bank account number" sap:VirtualizedContainerService.HintSize="2230,2398" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Navigate to Reconciliation page find the bank account number" sap:VirtualizedContainerService.HintSize="2230,2390" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="2208,52" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Navigate to Bank Reconciliation Page to Edit the Recon Started&quot;]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="2208,51" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Navigate to Bank Reconciliation Page to Edit the Recon Started&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -77,7 +77,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <TryCatch DisplayName="Flow-Navigate to Reconciliation page find the bank account number" sap:VirtualizedContainerService.HintSize="2208,2090" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Flow-Navigate to Reconciliation page find the bank account number" sap:VirtualizedContainerService.HintSize="2208,2084" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -85,7 +85,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <Flowchart sap2010:Annotation.AnnotationText="Navigation steps in NAV when the bot need to select the edit" DisplayName="Flow-Navigate to Reconciliation page find the bank account number" sap:VirtualizedContainerService.HintSize="2190,1858" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+        <Flowchart sap2010:Annotation.AnnotationText="Navigation steps in NAV when the bot need to select the edit" DisplayName="Flow-Navigate to Reconciliation page find the bank account number" sap:VirtualizedContainerService.HintSize="2190,1857" sap2010:WorkflowViewState.IdRef="Flowchart_1">
           <Flowchart.Variables>
             <Variable x:TypeArguments="x:Boolean" Name="BI_Add_Filter" />
             <Variable x:TypeArguments="x:Boolean" Name="BI_Bank_Account_No" />
@@ -113,11 +113,11 @@
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <av:Point x:Key="ShapeLocation">410,254.5</av:Point>
-                <av:Size x:Key="ShapeSize">200,52</av:Size>
+                <av:Size x:Key="ShapeSize">200,51</av:Size>
                 <av:PointCollection x:Key="ConnectorLocation">510,306.5 510,324.5</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click on Bank Account Reconsciliation" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+            <ui:Click DelayBefore="{x:Null}" DelayMS="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click on Bank Account Reconsciliation" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -142,11 +142,11 @@
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <av:Point x:Key="ShapeLocation">410,324.5</av:Point>
-                    <av:Size x:Key="ShapeSize">200,52</av:Size>
+                    <av:Size x:Key="ShapeSize">200,51</av:Size>
                     <av:PointCollection x:Key="ConnectorLocation">510,376.5 511.5,376.5 511.5,406.5</av:PointCollection>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:UiElementExists DisplayName="Element Exists  Add Filter" Exists="[BI_Add_Filter]" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
+                <ui:UiElementExists DisplayName="Element Exists  Add Filter" Exists="[BI_Add_Filter]" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="UiElementExists_1">
                   <ui:UiElementExists.Target>
                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="780aefc8284bcc626d665d81ad96fd09" Selector="&lt;wnd app='microsoft.dynamics.nav.client.exe' cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd ctrlname='LayoutPlaceholder' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations' /&gt;&lt;wnd ctrlname='contentAndMessagesPlaceholder' /&gt;&lt;wnd ctrlname='contentAndFilterPlaceholder' /&gt;&lt;wnd aaname='Filter pane' cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='WindowsForms10.Window.*' idx='1' /&gt;&lt;wnd ctrlname='expressionBuilderPanel' /&gt;&lt;wnd ctrlname='expressionBuilder' /&gt;&lt;ctrl name='Property' role='menu button' /&gt;" TimeoutMS="5000" WaitForReady="INTERACTIVE" />
                   </ui:UiElementExists.Target>
@@ -157,12 +157,12 @@
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:UiElementExists>
                 <FlowStep.Next>
-                  <FlowDecision x:Name="__ReferenceID4" Condition="[BI_Add_Filter]" DisplayName="Check for add filter status" sap:VirtualizedContainerService.HintSize="142,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+                  <FlowDecision x:Name="__ReferenceID4" Condition="[BI_Add_Filter]" DisplayName="Check for add filter status" sap:VirtualizedContainerService.HintSize="141,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <av:Point x:Key="ShapeLocation">440.5,406.5</av:Point>
-                        <av:Size x:Key="ShapeSize">142,87</av:Size>
+                        <av:Size x:Key="ShapeSize">141,87</av:Size>
                         <av:PointCollection x:Key="FalseConnector">582.5,450 650,450 650,544</av:PointCollection>
                         <av:PointCollection x:Key="TrueConnector">440.5,450 390,450 390,544.5</av:PointCollection>
                       </scg:Dictionary>
@@ -172,11 +172,11 @@
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <av:Point x:Key="ShapeLocation">290,544.5</av:Point>
-                            <av:Size x:Key="ShapeSize">200,52</av:Size>
+                            <av:Size x:Key="ShapeSize">200,51</av:Size>
                             <av:PointCollection x:Key="ConnectorLocation">390,596.5 390,624.5</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:Click DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="1000" DisplayName="Click on Add Filter" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                        <ui:Click DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="1000" DisplayName="Click on Add Filter" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
                           <ui:Click.CursorPosition>
                             <ui:CursorPosition Position="Center">
                               <ui:CursorPosition.OffsetX>
@@ -201,11 +201,11 @@
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <av:Point x:Key="ShapeLocation">290,624.5</av:Point>
-                                <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                <av:Size x:Key="ShapeSize">200,51</av:Size>
                                 <av:PointCollection x:Key="ConnectorLocation">390,675.5 390,704.5</av:PointCollection>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:Click DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="1000" DisplayName="Click to Select Bank Account no" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
+                            <ui:Click DelayBefore="{x:Null}" ClickType="CLICK_SINGLE" DelayMS="1000" DisplayName="Click to Select Bank Account no" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SendWindowMessages="False" SimulateClick="False">
                               <ui:Click.CursorPosition>
                                 <ui:CursorPosition Position="Center">
                                   <ui:CursorPosition.OffsetX>
@@ -230,11 +230,11 @@
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <av:Point x:Key="ShapeLocation">290,704.5</av:Point>
-                                    <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                    <av:Size x:Key="ShapeSize">200,51</av:Size>
                                     <av:PointCollection x:Key="ConnectorLocation">390,755.5 390,784.5</av:PointCollection>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window - Drop down to select Bank Account No." sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="e951dd1570be81f2d03cf987dd3d1fc0" Selector="&lt;wnd aaname='DropDown' app='microsoft.dynamics.nav.client.exe' cls='WindowsForms10.Window.*' idx='1' /&gt;">
+                                <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" Window="{x:Null}" DisplayName="Attach Window - Drop down to select Bank Account No." sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="WindowScope_1" InformativeScreenshot="e951dd1570be81f2d03cf987dd3d1fc0" Selector="&lt;wnd aaname='DropDown' app='microsoft.dynamics.nav.client.exe' cls='WindowsForms10.Window.*' idx='1' /&gt;">
                                   <ui:WindowScope.Body>
                                     <ActivityAction x:TypeArguments="x:Object">
                                       <ActivityAction.Argument>
@@ -275,11 +275,11 @@
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <av:Point x:Key="ShapeLocation">290,784.5</av:Point>
-                                        <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                        <av:Size x:Key="ShapeSize">200,51</av:Size>
                                         <av:PointCollection x:Key="ConnectorLocation">490,810.5 540,810.5 540,856.5</av:PointCollection>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Selected option from dropdown" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="GetValue_3">
+                                    <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Selected option from dropdown" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="GetValue_3">
                                       <ui:GetValue.Target>
                                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="80a07ca2674d85f92aac322194a746d8" Selector="&lt;wnd app='microsoft.dynamics.nav.client.exe' cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd ctrlname='LayoutPlaceholder' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations' /&gt;&lt;wnd ctrlname='contentAndMessagesPlaceholder' /&gt;&lt;wnd ctrlname='contentAndFilterPlaceholder' /&gt;&lt;wnd aaname='Filter pane' cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='WindowsForms10.Window.*' idx='1' /&gt;&lt;wnd ctrlname='expressionBuilderPanel' /&gt;&lt;wnd ctrlname='expressionBuilder' /&gt;&lt;ctrl idx='2' name='Property' role='menu button' /&gt;" WaitForReady="INTERACTIVE" />
                                       </ui:GetValue.Target>
@@ -308,11 +308,11 @@
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <av:Point x:Key="ShapeLocation">290,964</av:Point>
-                                                <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                 <av:PointCollection x:Key="ConnectorLocation">390,1016 390,1064</av:PointCollection>
                                               </scg:Dictionary>
                                             </sap:WorkflowViewStateService.ViewState>
-                                            <ui:TypeInto DelayBetweenKeys="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="1000" DelayMS="1000" DisplayName="Type Bank Accoun no" EmptyField="False" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="False" SimulateType="False" Text="[In_AccountNo]">
+                                            <ui:TypeInto DelayBetweenKeys="{x:Null}" Activate="True" ClickBeforeTyping="True" DelayBefore="1000" DelayMS="1000" DisplayName="Type Bank Accoun no" EmptyField="False" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="TypeInto_1" SendWindowMessages="False" SimulateType="False" Text="[In_AccountNo]">
                                               <ui:TypeInto.Target>
                                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="19d0c8b4b108d1f0e7ace43c982477a2" Selector="&lt;wnd app='microsoft.dynamics.nav.client.exe' cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd ctrlname='LayoutPlaceholder' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations' /&gt;&lt;wnd ctrlname='contentAndMessagesPlaceholder' /&gt;&lt;wnd ctrlname='contentAndFilterPlaceholder' /&gt;&lt;wnd aaname='Filter pane' cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='WindowsForms10.Window.*' idx='1' /&gt;&lt;wnd ctrlname='expressionBuilderPanel' /&gt;&lt;wnd ctrlname='expressionBuilder' /&gt;&lt;ctrl idx='2' name='Value editor' role='menu button' /&gt;" WaitForReady="INTERACTIVE" />
                                               </ui:TypeInto.Target>
@@ -327,11 +327,11 @@
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <av:Point x:Key="ShapeLocation">290,1064</av:Point>
-                                                    <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                    <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                     <av:PointCollection x:Key="ConnectorLocation">390,1116 390,1154</av:PointCollection>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" sap2010:Annotation.AnnotationText="To make the account no visible" ClickBeforeTyping="False" DisplayName="Send Hotkey- Enter" EmptyField="False" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SendWindowMessages="False" SpecialKey="True">
+                                                <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" sap2010:Annotation.AnnotationText="To make the account no visible" ClickBeforeTyping="False" DisplayName="Send Hotkey- Enter" EmptyField="False" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SendWindowMessages="False" SpecialKey="True">
                                                   <ui:SendHotkey.Target>
                                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
                                                   </ui:SendHotkey.Target>
@@ -347,11 +347,11 @@
                                                     <sap:WorkflowViewStateService.ViewState>
                                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                         <av:Point x:Key="ShapeLocation">290,1154</av:Point>
-                                                        <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                        <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                         <av:PointCollection x:Key="ConnectorLocation">490,1180 560,1180 560,1226.5</av:PointCollection>
                                                       </scg:Dictionary>
                                                     </sap:WorkflowViewStateService.ViewState>
-                                                    <ui:UiElementExists DisplayName="Element Exists _Bank Account no" Exists="[BI_Bank_Account_No]" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
+                                                    <ui:UiElementExists DisplayName="Element Exists _Bank Account no" Exists="[BI_Bank_Account_No]" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="UiElementExists_2">
                                                       <ui:UiElementExists.Target>
                                                         <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="b02ee3086886d6af40af87a91a3ae833" Selector="&lt;wnd app='microsoft.dynamics.nav.client.exe' cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd ctrlname='LayoutPlaceholder' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations' /&gt;&lt;wnd ctrlname='contentAndMessagesPlaceholder' /&gt;&lt;wnd ctrlname='contentAndFilterPlaceholder' /&gt;&lt;wnd ctrlname='contentPlaceholder' /&gt;&lt;wnd cls='WindowsForms10.Window.*' idx='1' /&gt;&lt;wnd ctrlname='_DataGrid' /&gt;&lt;ctrl name='DataGridView' role='table' /&gt;&lt;ctrl name='Row 0' role='row' /&gt;&lt;ctrl name='Bank Account No. Row 0' role='cell' /&gt;" TimeoutMS="3000" WaitForReady="INTERACTIVE" />
                                                       </ui:UiElementExists.Target>
@@ -377,11 +377,11 @@
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <av:Point x:Key="ShapeLocation">280,1344</av:Point>
-                                                                <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                                <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                                 <av:PointCollection x:Key="ConnectorLocation">380,1396 380,1439</av:PointCollection>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
-                                                            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get 1st visible account number" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="GetValue_2">
+                                                            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get 1st visible account number" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="GetValue_2">
                                                               <ui:GetValue.Target>
                                                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" TimeoutMS="{x:Null}" InformativeScreenshot="e8deab00a0cc11c67c7e7b112a0802e5" Selector="&lt;wnd app='microsoft.dynamics.nav.client.exe' cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations - Microsoft Dynamics NAV' /&gt;&lt;wnd ctrlname='LayoutPlaceholder' /&gt;&lt;wnd cls='WindowsForms10.Window.*' title='Bank Account Reconciliations' /&gt;&lt;wnd ctrlname='contentAndMessagesPlaceholder' /&gt;&lt;wnd ctrlname='contentAndFilterPlaceholder' /&gt;&lt;wnd ctrlname='contentPlaceholder' /&gt;&lt;wnd cls='WindowsForms10.Window.*' idx='1' /&gt;&lt;wnd ctrlname='_DataGrid' /&gt;&lt;ctrl name='DataGridView' role='table' /&gt;&lt;ctrl name='Row 0' role='row' /&gt;&lt;ctrl name='Bank Account No. Row 0' role='cell' /&gt;" WaitForReady="INTERACTIVE" />
                                                               </ui:GetValue.Target>
@@ -399,11 +399,11 @@
                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                     <av:Point x:Key="ShapeLocation">275,1439</av:Point>
-                                                                    <av:Size x:Key="ShapeSize">210,62</av:Size>
+                                                                    <av:Size x:Key="ShapeSize">210,61</av:Size>
                                                                     <av:PointCollection x:Key="ConnectorLocation">485,1470 600,1470 600,1556.5</av:PointCollection>
                                                                   </scg:Dictionary>
                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="210,62" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot; Visible_AccNo - &quot;+Visible_AccNo+&quot;;&quot;+&quot;Account No. - &quot;+In_AccountNo]">
+                                                                <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="210,61" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot; Visible_AccNo - &quot;+Visible_AccNo+&quot;;&quot;+&quot;Account No. - &quot;+In_AccountNo]">
                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -426,10 +426,10 @@
                                                                         <sap:WorkflowViewStateService.ViewState>
                                                                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                             <av:Point x:Key="ShapeLocation">310,1644</av:Point>
-                                                                            <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                                            <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                                           </scg:Dictionary>
                                                                         </sap:WorkflowViewStateService.ViewState>
-                                                                        <Sequence DisplayName="Check Recon condition" sap:VirtualizedContainerService.HintSize="822,1690" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                                                                        <Sequence DisplayName="Check Recon condition" sap:VirtualizedContainerService.HintSize="822,1784" sap2010:WorkflowViewState.IdRef="Sequence_67">
                                                                           <Sequence.Variables>
                                                                             <Variable x:TypeArguments="x:String" Name="ReconDate" />
                                                                             <Variable x:TypeArguments="s:DateTime" Name="DT_StatementDate" />
@@ -445,7 +445,7 @@
                                                                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                             </scg:Dictionary>
                                                                           </sap:WorkflowViewStateService.ViewState>
-                                                                          <TryCatch DisplayName="Get Recon Date" sap:VirtualizedContainerService.HintSize="800,52" sap2010:WorkflowViewState.IdRef="TryCatch_6">
+                                                                          <TryCatch DisplayName="Get Recon Date" sap:VirtualizedContainerService.HintSize="800,51" sap2010:WorkflowViewState.IdRef="TryCatch_6">
                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -492,7 +492,15 @@
                                                                               </Catch>
                                                                             </TryCatch.Catches>
                                                                           </TryCatch>
-                                                                          <Assign sap2010:Annotation.AnnotationText="Convert Statement Date from String to Date time" sap:VirtualizedContainerService.HintSize="800,104" sap2010:WorkflowViewState.IdRef="Assign_82">
+                                                                          <Assign sap:VirtualizedContainerService.HintSize="800,60" sap2010:WorkflowViewState.IdRef="Assign_122">
+                                                                            <Assign.To>
+                                                                              <OutArgument x:TypeArguments="x:String">[In_StatementDate]</OutArgument>
+                                                                            </Assign.To>
+                                                                            <Assign.Value>
+                                                                              <InArgument x:TypeArguments="x:String">[In_StatementDate.Replace(" 00:00:00","")]</InArgument>
+                                                                            </Assign.Value>
+                                                                          </Assign>
+                                                                          <Assign sap2010:Annotation.AnnotationText="Convert Statement Date from String to Date time" sap:VirtualizedContainerService.HintSize="800,102" sap2010:WorkflowViewState.IdRef="Assign_82">
                                                                             <Assign.To>
                                                                               <OutArgument x:TypeArguments="s:DateTime">[DT_StatementDate]</OutArgument>
                                                                             </Assign.To>
@@ -505,7 +513,7 @@
                                                                               </scg:Dictionary>
                                                                             </sap:WorkflowViewStateService.ViewState>
                                                                           </Assign>
-                                                                          <Assign sap2010:Annotation.AnnotationText="Convert  Recon Date from String to Date time" sap:VirtualizedContainerService.HintSize="800,104" sap2010:WorkflowViewState.IdRef="Assign_83">
+                                                                          <Assign sap2010:Annotation.AnnotationText="Convert  Recon Date from String to Date time" sap:VirtualizedContainerService.HintSize="800,102" sap2010:WorkflowViewState.IdRef="Assign_83">
                                                                             <Assign.To>
                                                                               <OutArgument x:TypeArguments="s:DateTime">[DT_ReconDate]</OutArgument>
                                                                             </Assign.To>
@@ -518,7 +526,7 @@
                                                                               </scg:Dictionary>
                                                                             </sap:WorkflowViewStateService.ViewState>
                                                                           </Assign>
-                                                                          <Assign sap2010:Annotation.AnnotationText="Get Statement date in words" sap:VirtualizedContainerService.HintSize="800,88" sap2010:WorkflowViewState.IdRef="Assign_84">
+                                                                          <Assign sap2010:Annotation.AnnotationText="Get Statement date in words" sap:VirtualizedContainerService.HintSize="800,87" sap2010:WorkflowViewState.IdRef="Assign_84">
                                                                             <Assign.To>
                                                                               <OutArgument x:TypeArguments="x:String">[StatementDateDayInWords]</OutArgument>
                                                                             </Assign.To>
@@ -1160,10 +1168,10 @@
                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                 <av:Point x:Key="ShapeLocation">680,1424</av:Point>
-                                                                                <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                                                <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                                               </scg:Dictionary>
                                                                             </sap:WorkflowViewStateService.ViewState>
-                                                                            <Sequence DisplayName="Close application and Error message Sequence" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                                                            <Sequence DisplayName="Close application and Error message Sequence" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                                                               <sap:WorkflowViewStateService.ViewState>
                                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1231,11 +1239,11 @@
                                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                     <av:Point x:Key="ShapeLocation">410,164</av:Point>
-                                                                                    <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                                                    <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                                                     <av:PointCollection x:Key="ConnectorLocation">510,216 510,254.5</av:PointCollection>
                                                                                   </scg:Dictionary>
                                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                                <Sequence DisplayName="Navigate to Cash Management" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                                                                                <Sequence DisplayName="Navigate to Cash Management" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_17">
                                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1342,10 +1350,10 @@
                                                             <sap:WorkflowViewStateService.ViewState>
                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                 <av:Point x:Key="ShapeLocation">710,1244</av:Point>
-                                                                <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                                <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                               </scg:Dictionary>
                                                             </sap:WorkflowViewStateService.ViewState>
-                                                            <Sequence DisplayName="Import Journal" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="Sequence_68">
+                                                            <Sequence DisplayName="Import Journal" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_68">
                                                               <sap:WorkflowViewStateService.ViewState>
                                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1386,10 +1394,10 @@
                                                 <sap:WorkflowViewStateService.ViewState>
                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                     <av:Point x:Key="ShapeLocation">570,714</av:Point>
-                                                    <av:Size x:Key="ShapeSize">200,52</av:Size>
+                                                    <av:Size x:Key="ShapeSize">200,51</av:Size>
                                                   </scg:Dictionary>
                                                 </sap:WorkflowViewStateService.ViewState>
-                                                <Sequence DisplayName="Close application and Error message Sequence" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                                                <Sequence DisplayName="Close application and Error message Sequence" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="Sequence_13">
                                                   <sap:WorkflowViewStateService.ViewState>
                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1491,11 +1499,11 @@
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <av:Point x:Key="ShapeLocation">550,544</av:Point>
-                            <av:Size x:Key="ShapeSize">200,52</av:Size>
+                            <av:Size x:Key="ShapeSize">200,51</av:Size>
                             <av:PointCollection x:Key="ConnectorLocation">550,570 520,570 520,570.5 490,570.5</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" sap2010:Annotation.AnnotationText="If filter is not visible press &quot;Shift+F3&quot; to make the filter visible" ClickBeforeTyping="False" DisplayName="Send Hotkey to view Filters" EmptyField="False" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="f3" KeyModifiers="Shift" SendWindowMessages="False" SpecialKey="True">
+                        <ui:SendHotkey DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" Activate="True" sap2010:Annotation.AnnotationText="If filter is not visible press &quot;Shift+F3&quot; to make the filter visible" ClickBeforeTyping="False" DisplayName="Send Hotkey to view Filters" EmptyField="False" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="f3" KeyModifiers="Shift" SendWindowMessages="False" SpecialKey="True">
                           <ui:SendHotkey.Target>
                             <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" TimeoutMS="{x:Null}" WaitForReady="INTERACTIVE" />
                           </ui:SendHotkey.Target>
@@ -1543,7 +1551,7 @@
         </Flowchart>
       </TryCatch.Try>
       <TryCatch.Catches>
-        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="2194,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="2194,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1584,7 +1592,7 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="2208,52" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Navigate to Bank Reconciliation Page to Edit the Recon Ended&quot;]">
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="2208,51" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Navigate to Bank Reconciliation Page to Edit the Recon Ended&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
